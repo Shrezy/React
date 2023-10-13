@@ -12,7 +12,7 @@ import drizzle_icon from '../Assets/drizzle.png'
 
 export const WeatherApp = () => {
 
-    let api_key = "9730624f7093e13d54104c7c6cfc7179";
+    const api_key = process.env.REACT_APP_API_KEY;
 
     const [wicon,setwicon] = useState(cloudy_icon);
 
